@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Tutor - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>AI Tutor</h1>
+    <div id="error" class="alert alert-error hidden"></div>
+    <div id="ai-status" class="alert alert-info"></div>
+
+    <div class="card">
+      <div class="field">
+        <label for="topic-select">Topic</label>
+        <select id="topic-select"><option value="">General question (no topic)</option></select>
+      </div>
+      <p id="level-line" class="muted"></p>
+      <button id="mistakes-btn" class="btn btn-outline" disabled>Explain my mistakes in this topic</button>
+    </div>
+
+    <div class="card">
+      <div id="chat" class="chat"></div>
+      <div class="chat-input">
+        <input type="text" id="message" maxlength="500" placeholder="Ask a question about this topic...">
+        <button id="send-btn" class="btn">Send</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/tutor.js"></script>
+</body>
+</html>

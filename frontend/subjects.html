@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subjects - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/subjects.html">Subjects</a>
+        <button id="logout-btn" class="btn btn-outline">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Subjects</h1>
+    <p class="muted">Choose a topic to start a quiz.</p>
+    <div id="error" class="alert alert-error hidden"></div>
+    <div id="subjects" class="grid-2"></div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/subjects.js"></script>
+</body>
+</html>

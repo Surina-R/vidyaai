@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Your progress</h1>
+    <div id="error" class="alert alert-error hidden"></div>
+
+    <div class="card">
+      <h2>Topic-wise performance</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th>Topic</th><th>Subject</th><th>Level</th><th>Quizzes</th><th>Correct</th><th>Recent accuracy</th><th>Next difficulty</th></tr>
+          </thead>
+          <tbody id="topic-rows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Improvement</h2>
+      <p class="muted">First quiz score compared with your latest quiz score on the same topic.</p>
+      <ul id="improvement" class="list"></ul>
+      <p id="improvement-empty" class="muted hidden">Take a topic quiz at least twice to see your improvement.</p>
+    </div>
+
+    <div class="card">
+      <h2>Score history (oldest to newest)</h2>
+      <div id="timeline"></div>
+      <p id="timeline-empty" class="muted hidden">No quizzes yet.</p>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/progress.js"></script>
+</body>
+</html>

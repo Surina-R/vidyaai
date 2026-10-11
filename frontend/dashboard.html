@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="welcome">...</h1>
+
+    <div id="teacher-note" class="alert alert-info hidden">
+      Teacher dashboard will be added in a later phase.
+    </div>
+
+    <section id="student-area" class="hidden">
+      <p id="profile-line" class="muted"></p>
+      <div id="error" class="alert alert-error hidden"></div>
+
+      <div class="card">
+        <h2>Overall progress</h2>
+        <div id="stats" class="stats"></div>
+        <div id="mastery-text" class="muted"></div>
+        <div class="progress"><div id="mastery-bar"></div></div>
+      </div>
+
+      <div class="card">
+        <h2>Recommended for you</h2>
+        <ul id="rec-list" class="list"></ul>
+        <p id="rec-empty" class="muted hidden">Take a quiz to get personalised recommendations.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Weak topics</h3>
+          <ul id="weak-list" class="list"></ul>
+          <p id="weak-empty" class="muted hidden">No weak topics. Keep it up!</p>
+        </div>
+        <div class="card">
+          <h3>Strong topics</h3>
+          <ul id="strong-list" class="list"></ul>
+          <p id="strong-empty" class="muted hidden">No strong topics yet. Take some quizzes.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Recent activity</h2>
+        <ul id="recent" class="list"></ul>
+        <p id="recent-empty" class="muted hidden">No quizzes yet. Pick a topic and take your first quiz!</p>
+        <div class="actions">
+          <a class="btn" href="/subjects.html">Start learning</a>
+          <a class="btn btn-outline" href="/progress.html">See full progress</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Academic prototype, not production-ready.</footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

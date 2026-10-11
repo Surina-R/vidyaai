@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/subjects.html">Subjects</a>
+        <button id="logout-btn" class="btn btn-outline">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="quiz-title">Quiz</h1>
+    <p id="quiz-sub" class="muted"></p>
+    <div id="error" class="alert alert-error hidden"></div>
+
+    <div id="quiz-area" class="hidden">
+      <div id="answered-text" class="muted"></div>
+      <div class="progress"><div id="bar"></div></div>
+      <div id="questions"></div>
+      <button id="submit-btn" class="btn">Submit answers</button>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/quiz.js"></script>
+</body>
+</html>

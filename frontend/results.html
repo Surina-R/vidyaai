@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/subjects.html">Subjects</a>
+        <button id="logout-btn" class="btn btn-outline">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="error" class="alert alert-error hidden"></div>
+
+    <div id="result-area" class="hidden">
+      <div class="card score-box">
+        <h2 id="result-topic"></h2>
+        <div class="big" id="result-score"></div>
+        <p id="result-message"></p>
+      </div>
+
+      <h2>Review your answers</h2>
+      <div id="answers"></div>
+
+      <div class="actions">
+        <a id="retry-btn" class="btn">Try this topic again</a>
+        <a class="btn btn-outline" href="/subjects.html">Choose another topic</a>
+        <a class="btn btn-outline" href="/dashboard.html">Dashboard</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/results.js"></script>
+</body>
+</html>

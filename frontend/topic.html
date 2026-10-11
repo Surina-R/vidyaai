@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/subjects.html">Subjects</a>
+        <button id="logout-btn" class="btn btn-outline">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <p><a href="/subjects.html">&larr; Back to subjects</a></p>
+    <h1 id="topic-name">...</h1>
+    <p id="subject-name" class="muted"></p>
+    <div id="error" class="alert alert-error hidden"></div>
+
+    <div id="content" class="hidden">
+      <div id="prereq" class="alert alert-info hidden"></div>
+
+      <div class="card">
+        <h2>Take a quiz</h2>
+        <p id="quiz-info" class="muted"></p>
+        <div id="difficulty-options"></div>
+        <button id="start-btn" class="btn">Start quiz</button>
+      </div>
+
+      <div class="card">
+        <h2>Your previous attempts</h2>
+        <ul id="attempts" class="list"></ul>
+        <p id="no-attempts" class="muted hidden">You have not taken a quiz on this topic yet.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/topic.js"></script>
+</body>
+</html>

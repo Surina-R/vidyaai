@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recommendations - VidyaAI</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="/dashboard.html">VidyaAI</a>
+      <div class="nav-right nav-links"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Recommended for you</h1>
+    <div id="error" class="alert alert-error hidden"></div>
+
+    <div class="card">
+      <ul id="rec-list" class="list"></ul>
+      <p id="rec-empty" class="muted hidden">No recommendations yet. Take a quiz to get started.</p>
+    </div>
+
+    <div class="card">
+      <h3>How these are chosen</h3>
+      <ul>
+        <li><strong>Revise:</strong> topics where your recent accuracy is below 50% (weak), worst first.</li>
+        <li><strong>Quiz:</strong> a quiz at your recommended difficulty to check improvement.</li>
+        <li><strong>Learn:</strong> a new topic, but only when its prerequisite topic is average or strong.</li>
+        <li>Difficulty goes up after a score of 80% or more and down after a score below 50%.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/recommendations.js"></script>
+</body>
+</html>
